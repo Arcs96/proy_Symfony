@@ -1,7 +1,12 @@
+principal:
+    resource: "@PrincipalBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 rural:
     resource: "@RuralBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /rural
 
 app:
     resource: '@AppBundle/Controller/'

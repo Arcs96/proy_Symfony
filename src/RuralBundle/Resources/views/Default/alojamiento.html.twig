@@ -1,0 +1,18 @@
+{% extends 'baseRural.html.twig' %}
+{% block body %}
+
+  <div class="card">
+    <ul class="list-group list-group-flush">
+      {% for alojamiento in alojamientos %}
+          <li class="list-group-item">
+            <b>{{ alojamiento.nomAlojamiento}}</b> -
+            {{alojamiento.precioAprox}}€           -
+            {{alojamiento.tipoAlquiler}}           -
+            {{alojamiento.numEstancia}} estancias  -
+            {{alojamiento.numPers}} personas
+          </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endblock %}
