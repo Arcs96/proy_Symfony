@@ -34,9 +34,6 @@ class DefaultController extends Controller
 
   return $this->render('RuralBundle:Default:alojamiento.html.twig',array("id"=>$alojamiento->getId(),"nombre"=>$alojamiento->getNomAlojamiento()));
 
-  |date('y-m-d');
-  */
-  /*
   --- 2.Filtrado por campos2 ---
   $repository = $this->getDoctrine()->getRepository('RuralBundle:Alojamiento');
   $alojamiento = $repository->find(1);
