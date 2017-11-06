@@ -1,9 +1,0 @@
-/.web-server-pid
-/app/config/parameters.yml
-/build/
-/phpunit.xml
-!/var/sessions
-/var/sessions/*
-!var/sessions/.gitkeep
-!var/SymfonyRequirements.php
-/web/bundles/
