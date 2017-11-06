@@ -17,14 +17,22 @@ class DefaultController extends Controller
   }
 
   /**
-   * @Route("/alojamiento", name="alojamiento")
+   * @Route("/comarca", name="comarca")
    */
-  public function alojamientoAction()
+  public function comarcaAction()
   {
       $repository = $this->getDoctrine()->getRepository('RuralBundle:Alojamiento');
       $alojamiento = $repository->findAll();
 
-      return $this->render('RuralBundle:Default:alojamiento.html.twig',array("alojamientos"=>$alojamiento));
+      return $this->render('RuralBundle:Default:comarca.html.twig',array("alojamientos"=>$alojamiento));
+  }
+
+  /**
+   * @Route("/alojamiento", name="alojamiento")
+   */
+  public function alojamientoAction()
+  {
+      return $this->render('RuralBundle:Default:alojamiento.html.twig');
   }
 
   /*
